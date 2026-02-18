@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Admin Dashboard</title>
 		 <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-		 <script>eruda.init(); eruda.show()</script>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 		<script src="script.js" defer></script>
 	</head>
 	<body>
@@ -14,13 +14,28 @@
 			<div id="navbar">
 				<div id="top-nav">
 					<div>
-						<img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/search.svg">
+						<img id="search-icon" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/search.svg">
 						<input name"search" id="search" type="text">
 					</div>
 					<div>
+						<img  src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/dist/icons/bell.svg">
+						<img class="profile-pic" src="acadryx.png">
+						<p>Uduvwurode Simeon</p>
 					</div>
 				</div>
 				<div id="bottom-nav">
+					<div>
+						<img src="acadryx.png">
+						<div id="nav-greeting">
+							<p>Hi There,</p>
+							<p>Uduvwurode Simeon</p>
+						</div>
+					</div>
+					<div>
+						<button>New</button>
+						<button>Upload</button>
+						<button>Share</button>
+					</div>
 				</div>
 			</div>
 			<div id="sidebar">
@@ -70,7 +85,30 @@
 				</div>
 			</div>
 			<div id="main">
-				hi there too
+				<div>
+					<h1>Your Projects</h1>
+					<div id="admin-projects">
+					</div>
+				</div>
+				<div>
+					<div id="announcements">
+						<h1>Announcements</h1>
+						<div id="announcement-cards">
+						</div>
+					</div>
+					<div id="trending">
+						<h1>Trending</h1>
+						<div id="trending-projects">
+							<div class="trending-project">
+								<img src="acadryx.png" class="profile-pic">
+								<div>
+									<h4>Name placer</h4>
+									<p>Project Name Placer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
