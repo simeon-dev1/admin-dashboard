@@ -1,0 +1,96 @@
+:root {
+	--primary-color: rgb(85, 172, 238);	
+}
+
+* {
+	box-sizing: border-box;
+	border: 1px dashed red;
+	line-height: 1.5rem;
+}
+
+body {
+	margin: 0px;
+}
+
+#root {
+	display: grid;
+	grid-template: 200px 1fr / 1fr 4fr;
+}
+
+
+/* SIDE BAR */
+#sidebar {
+	grid-row: 1 / -1;
+	background-color: var(--primary-color);
+	color: white;
+}
+/* ----- little border override ---- */
+#sidebar * {
+	border: none;
+}
+
+#logo-div {
+	display: flex;
+	align-items: center;;
+	& img {
+		width: 16.5%;
+		margin-left: 0.4rem;
+	}
+	& h2 {
+		margin-left: 0.4rem;
+	}
+}
+
+#links1, 
+#links2 {
+	margin-top: 50px;
+	margin-left: 1.6rem;
+	.link {
+		display: flex;
+		align-items: center;
+		& img {
+			filter: brightness(0) invert(1);
+			margin-right: 0.5rem;
+		} 
+		& a {
+			text-decoration: none;
+			font-size: 1.3rem;
+			font-weight: bold;
+			display: block;
+			line-height: 3.5rem;
+		}
+	}
+	
+}
+
+#links2 {
+	
+}
+
+
+
+/* NAV BAR */
+#navbar {
+	display: grid;
+	grid-template-rows: 1.3fr 2fr;
+}
+
+#top-nav {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	& img:nth-of-type(1) {
+		position: relative;
+		top: 0.4rem;
+		margin-right: 0.4rem;
+	}
+	& input {
+		height: 1.8rem;
+		font-size: 1.2rem;
+	}
+}
+
+/* MAIN BODY */
+#main {
+	overflow-y: auto;
+}
